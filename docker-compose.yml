@@ -4,9 +4,9 @@ services:
     build: .
     image: calendar
     container_name: calendar
-    command: npm start
+    command: sh entrypoint.sh
     volumes:
-      - .:/code
+      - .:/app
     ports:
       - "3000:3000"
     stdin_open: true
